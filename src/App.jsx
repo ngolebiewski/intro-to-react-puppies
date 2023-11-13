@@ -1,15 +1,16 @@
 import { puppyList } from './data.js'
 import { useState } from 'react'
+import './styles.css'
+
 
 const App = () => {
 
   const [puppies, setPuppies] = useState(puppyList);
-  // console.log(puppies);
 
   const [featPupId, setFeatPupId] = useState(null)
 
   const featuredPup = puppies.find((pup) => pup.id === featPupId);
-  console.log(featuredPup);
+ 
 
   return (
     <>
@@ -23,7 +24,7 @@ const App = () => {
         }
 
         {featPupId && (
-          <div>
+          <div className="featured">
             <h2>{featuredPup.name}</h2>
             <ul>
               <li>Age: {featuredPup.age}</li>

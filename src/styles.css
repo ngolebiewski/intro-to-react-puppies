@@ -1,0 +1,27 @@
+body {
+  font-family: monospace;
+  font-size: 1.2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.App {
+  background-color: lightskyblue;
+  width: 500px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 10px solid darkblue;
+  box-shadow: 10px 5px 5px deeppink;
+}
+
+.featured {
+  background-color: darkblue;
+  color: white;
+  border-radius: 10px;
+  border: 2px dashed white;
+  margin: 10px;
+  padding: 20px;
+}
+
